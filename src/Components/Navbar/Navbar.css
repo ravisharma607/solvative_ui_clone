@@ -1,0 +1,134 @@
+
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 100px;
+    z-index: 1;
+    background-color: #ffffffe9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.navbar .logo img{
+    height: 30px;
+    cursor: pointer;
+}
+.navbar .navLinks ul{
+    display: flex;
+    text-align: center;
+}
+.navbar .navLinks ul .letsTalk{
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+.navbar .navLinks ul li{
+    margin: 0 12px;
+    display: flex;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    padding: 2px;
+    cursor: pointer;
+    position: relative;
+}
+.navLinks ul li::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 60%;
+    width:0;
+    height: 3px;
+    background-color: #FFC400;
+    transition: all 0.3s linear;
+}
+.navLinks ul li:hover:before{
+    width: 95%;
+}
+.navbar ul li .arrow{
+    margin-left: 5px;
+}
+.navbar ul .letsTalk:hover .arrow{
+    transform: translateX(5px);
+}
+.navbar .menu img{
+    width: 43px;
+    height: 55px;
+    cursor: pointer;
+    display: none;
+}
+.MobileLetsTalk{
+    display: none;
+}
+@media screen and (max-width:900px){
+    .navbar{
+        padding: 10px 18px;
+        justify-content: flex-start;
+    }
+    .navbar .logo{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .MobileLetsTalk{
+        display:flex;
+        cursor: pointer;
+        position: relative;
+    }
+    .MobileLetsTalk::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 60%;
+        width:0;
+        height: 3px;
+        background-color: #FFC400;
+        transition: all 0.3s linear;
+    }
+    .MobileLetsTalk:hover:before{
+        width: 95%;
+    }
+    .navbar .navLinks{
+        position: absolute;
+        top:-300px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background-color: whitesmoke;
+        display: block;
+        transition: all 0.3s linear;
+    }
+    .navbar .navLinks.active{
+        display: block;
+        position: absolute;
+        top:75px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background-color: whitesmoke;
+        transition: all 0.3s linear;
+    }
+    .navbar .logo img{
+        height: 20px;
+        margin-left: 32px;
+    }
+    .navbar .navLinks ul{
+        height: auto;
+        flex-direction: column;
+        width: 100%;
+    }
+    .navbar .navLinks ul li{
+        border-bottom: 1px solid #00000050;
+        padding: 12px 0;
+        font-weight: bold;
+    }
+    .navbar .menu img{
+        display: flex;
+        width: 40px;
+        cursor: pointer;
+    }
+}

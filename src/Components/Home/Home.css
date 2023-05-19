@@ -1,0 +1,132 @@
+
+.home{
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.home video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+  }
+.homeContainer{
+    width: 90%;    
+    margin: 0  auto;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+.homeContainer .box{
+    width: 80%;
+    margin: 0 200px;
+    padding: 120px 100px;
+}
+.homeContainer .homeContainerHeading h1{
+    font-size: 5rem;
+    margin: 40px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fff;
+    text-shadow: 2px 2px black;
+}
+.homeContainer .homeContainerHeading h2{
+    font-family: 'Finger Paint', cursive;
+    text-transform:lowercase;
+    font-size: 5rem;
+    color: #fff;
+    filter: drop-shadow(2px 1px 1px black)
+}
+.homeContainer .homeContainerPara p{
+    color: #fff;
+    text-shadow: 1px 1px black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 32px;
+    font-size: 1.3rem;
+    margin: 20px 0;
+    letter-spacing: 1px;
+}
+.btn{
+    padding: 18px 22px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: #FFC400;
+    border-radius: 4px;
+}
+.btn ion-icon{
+    margin-left: 10px;
+}
+.btn span.active{
+    transform: translateX(5px);
+}
+.btn:hover{
+    box-shadow: 3px 5px black;
+}
+
+@media screen and (max-width:900px){
+    .homeContainer .box{
+        width: 90%;
+        padding:50px 0;
+        margin: auto;
+    }
+    .homeContainer .homeContainerHeading h1{
+        font-size: 3.5rem;
+    }
+    .homeContainer .homeContainerHeading h2{
+        font-size: 3rem;
+    }
+    .homeContainer .homeContainerHeading p{
+        font-size: 1rem;
+    }
+    .homeContainer{
+        margin-top: 100px;
+    }
+    .home{
+        background-size: 100% 100%;
+    }
+}
+@media screen and (max-width:600px){
+    .homeContainer .homeContainerHeading h1{
+        font-size: 2rem;
+        margin: 20px 0;
+    }
+    .homeContainer .homeContainerHeading h2{
+        font-size: 2rem;
+    }
+    .homeContainer .homeContainerPara p{
+        line-height: 25px;
+        font-size: 1rem;
+        margin: 20px 0;
+    }
+    .btn{
+        padding: 18px 22px;
+        font-size: 1rem;
+        letter-spacing: 1px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        background-color: #FFC400;
+        border-radius: 4px;
+    }
+}

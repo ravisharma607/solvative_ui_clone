@@ -1,0 +1,25 @@
+.scrollBtn{
+    transition: all 0.5s;
+}
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 20px;
+    background-color: #FFC400;
+    color: #000;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    text-align: center;
+    transition: all 0.5s;
+}
+.scrollBtn p{
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    transition: all 0.5s;
+}

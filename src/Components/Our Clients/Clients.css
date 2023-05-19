@@ -1,0 +1,120 @@
+
+.clientsBox{
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+.clientsCards{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.clientsCards .cards{
+    width: 45%;
+    padding: 20px 10px;
+    box-shadow: 0 0 15px #e4d8d8;
+}
+.clientsBox .heading h2{
+    font-size: 2.2rem;
+    padding: 12px 0;
+    font-weight: bold;
+}
+.clientsBox .heading p{
+    font-size: 1.2rem;
+    padding: 12px 0;
+}
+.clientsBox .clientsCards .mainImg{
+    padding: 20px 0;
+}
+.clientsBox .clientsCards .miniImg{
+    padding: 10px 0;
+}
+.clientsBox .clientsCards .mainImg img{
+    width: 100%;
+}
+.clientsBox .clientsCards .miniImg img{
+    width: 100px;
+}
+.clientsCards .desc a{
+    font-size: 23px;
+    line-height: 35px;
+    font-weight: 500;
+    color: #000;
+}
+.clientsCards .cards .desc button{
+    width: 40%;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin: 20px auto 20px 0;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    border-radius: 4px;
+}
+.clientsCards .cards button ion-icon{
+    margin-left: 5px;
+    display: flex;
+}
+.clientsCards .desc button:hover ion-icon{
+    transform: translateX(8px);
+}
+
+.clientsBox .btn{
+    margin: 30px auto;
+}
+.btn ion-icon{
+    margin-left: 5px;
+    display: flex;
+}
+.btn span.active{
+    transform: translateX(5px);
+}
+.btn:hover ion-icon{
+    transform: translateX(8px);
+}
+.btn:hover{
+    box-shadow: 3px 5px black;
+}
+
+@media screen and (max-width:800px){
+    .clientsCards{
+        flex-wrap: wrap;
+    }
+    .clientsCards .cards{
+        width: 100%;
+        margin: 20px auto;
+    }
+}
+@media screen and (max-width:600px){
+    .clientsCards .cards{
+    width: 100%;
+    padding:10px;
+    box-shadow: 0 0 15px #e4d8d8;
+}
+.clientsBox .heading h2{
+    font-size: 1.5rem;
+    padding: 12px 0;
+    font-weight: bold;
+}
+.clientsBox .heading p{
+    font-size: 1rem;
+    padding: 12px 0;
+}
+.clientsCards .cards .desc button{
+    width: 80%;
+    font-size: 15px;
+}
+.clientsCards .desc a{
+    font-size: 20px;
+}
+}

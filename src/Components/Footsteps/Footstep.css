@@ -1,0 +1,53 @@
+
+.footstepBox{
+    width: 90%;
+    margin: 0 auto;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.footstepBox .leftBox{
+    width: 50%;
+}
+.footstepBox .leftBox h3{
+    font-size: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+}
+.footstepBox .rightBox{
+    width: 50%;
+}
+.footstepBox .rightBox div{
+    margin: 5px 0;
+}
+.footstepBox .rightBox div p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    line-height: 25px;
+}
+.footstepBox .rightBox div span{ 
+   color: #FFC400;
+   font-weight: bold;
+}
+@media screen and (max-width:900px){
+    .footstepBox{
+        padding:20px;
+    }
+    .footstepBox .leftBox h3{
+        font-size: 1.3rem;
+    }
+    .footstepBox .rightBox div p{
+        font-size: .8rem;
+    }
+    .footstepBox .leftBox{
+        width: 95%;
+        margin: 0 auto;
+    }
+    .footstepBox .rightBox{
+        width: 95%;
+        margin: 0 auto;
+    }
+}
